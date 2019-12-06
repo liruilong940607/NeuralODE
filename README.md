@@ -49,4 +49,5 @@ for epoch in range(1, args.epochs + 1):
 ### Other Sources
 
 [Author's Pytorch Implementation](https://github.com/rtqichen/torchdiffeq)
+
 [TensorFlow Tutorial and Implementation](https://github.com/kmkolasinski/deep-learning-notes/tree/master/seminars/2019-03-Neural-Ordinary-Differential-Equations)
