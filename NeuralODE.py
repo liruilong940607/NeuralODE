@@ -36,7 +36,7 @@ def forward_dynamics(state, nnet):
 
 def backward_dynamics(state, nnet):
     with torch.set_grad_enabled(True):
-        t, ht, at = state[0], state[1], state[2]
+        t, ht, at = state[0], state[1], -state[2]
         ht = ht.detach()
         ht.requires_grad_(True)
         ht_new = nnet(t, ht)
